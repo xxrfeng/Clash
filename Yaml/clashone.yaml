@@ -1,4 +1,4 @@
-# 机场订阅，名称不能重复
+ta# 机场订阅，名称不能重复
 proxy-providers:
   Airport_01:
     type: http
@@ -19,7 +19,7 @@ proxy-providers:
     proxy: 🟢 直连
     url: "https://substore.wenddy.top/8vXtAxRGfddmhz2nx1pS/download/RN?target=ClashMeta"      
 # 用于下载订阅时指定UA
-global-ua: clash
+global-ua: clash meta
     
 # 全局配置
 port: 7890
