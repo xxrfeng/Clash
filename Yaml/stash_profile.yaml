@@ -452,6 +452,7 @@ proxy-groups:
     type: select
     include-all: true
 rules:
+  - IP-CIDR,172.31.1.0/24,home,no-resolve
   - SCRIPT,quic,REJECT
   - RULE-SET,category-ai-chat-!cn,OpenAI
   - RULE-SET,telegram,Telegram
