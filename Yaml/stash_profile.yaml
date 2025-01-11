@@ -120,6 +120,10 @@ proxies:
     type: DIRECT
     udp: true
 proxy-groups:
+  - name: home
+    type: select
+    proxies:
+      - home1
   - name: 默认节点
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Proxy.png
     type: select
