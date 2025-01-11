@@ -20,11 +20,11 @@ dns:
     - "+.local"
     # 服务提供商:
 proxy-providers:
-  Subscribe1:
-    url: https://substore.wenddy.top/8vXtAxRGfddmhz2nx1pS/download/RN?target=Stash # 用你的订阅链接替换
-    interval: 86400
-    benchmark-url: http://cp.cloudflare.com
-    benchmark-timeout: 5
+  # Subscribe1:
+  #   url: https://substore.wenddy.top/8vXtAxRGfddmhz2nx1pS/download/RN?target=Stash # 用你的订阅链接替换
+  #   interval: 86400
+  #   benchmark-url: http://cp.cloudflare.com
+  #   benchmark-timeout: 5
   Subscribe2:
     url: https://app.mitce.com/?sid=203701&token=srvzdwcp # 用你的订阅链接替换
     interval: 86400
