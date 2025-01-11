@@ -116,9 +116,9 @@ proxies:
     benchmark-timeout: 100
     benchmark-url: http://www.baidu.com
 # proxies:
-#   - name: 直连
-#     type: DIRECT
-#     udp: true
+  - name: 直连
+    type: DIRECT
+    udp: true
 proxy-groups:
   - name: 默认节点
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Proxy.png
