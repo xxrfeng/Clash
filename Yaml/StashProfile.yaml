@@ -9,9 +9,9 @@ proxy-providers:
   Provider-3:
     interval: 600
     url: https://substore.wenddy.top/8vXtAxRGfddmhz2nx1pS/download/RN?target=Stash
-  # Provider-4:
-  #   interval: 600
-  #   url: http://sub.store/download/Provider-4?target=Stash
+  Provider-4:
+    interval: 600
+    url: https://app.mitce.com/?sid=203701&token=srvzdwcp
 mode: rule
 dns:
   default-nameserver:
