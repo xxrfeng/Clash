@@ -1,14 +1,14 @@
 
 proxy-providers:
-  Provider-1:
-    interval: 600
-    url: https://substore.wenddy.top/8vXtAxRGfddmhz2nx1pS/download/ALL-IN-ONE?target=Stash
-  # Provider-2:
+  # Provider-1:
   #   interval: 600
-  #   url: http://sub.store/download/Provider-2?target=Stash
+  #   url: https://substore.wenddy.top/8vXtAxRGfddmhz2nx1pS/download/AKILE?target=Stash
+  Provider-2:
+    interval: 600
+    url: https://substore.wenddy.top/8vXtAxRGfddmhz2nx1pS/download/collection/ALL-IN-ONE?target=Stash
   # Provider-3:
   #   interval: 600
-  #   url: http://sub.store/download/Provider-3?target=Stash
+  #   url: https://substore.wenddy.top/8vXtAxRGfddmhz2nx1pS/download/RN?target=Stash
   # Provider-4:
   #   interval: 600
   #   url: http://sub.store/download/Provider-4?target=Stash
