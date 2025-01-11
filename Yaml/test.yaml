@@ -2,7 +2,7 @@
 proxy-providers:
   Provider-1:
     interval: 600
-    url: https://substore.wenddy.top/8vXtAxRGfddmhz2nx1pS/download/RN
+    url: https://substore.wenddy.top/8vXtAxRGfddmhz2nx1pS/download/RN?target=Clash
   # Provider-2:
   #   interval: 600
   #   url: http://sub.store/download/Provider-2?target=Stash
