@@ -1,7 +1,7 @@
 proxy-providers:
   Provider-1:
     interval: 600
-    url: https://substore.wenddy.top/8vXtAxRGfddmhz2nx1pS/download/collection/ALL-IN-ONE?target=Stash
+    url: https://substore.wenddy.top/8vXtAxRGfddmhz2nx1pS/download/collection/ALL-IN-ONE?target=Stash    
   # Provider-2:
   #   interval: 600
   #   url: http://sub.store/download/Provider-2?target=Stash
@@ -342,6 +342,8 @@ proxy-groups:
     interval: 120
     tolerance: 50
     lazy: true
+    url: http://www.gstatic.com/generate_204
+    interval: '300'
     filter: "(?i)^(?!.*(?:🇭🇰|🇹🇼|🇯🇵|🇰🇷|🇺🇸|🇸🇬|🇨🇳|港|hk|hong|台|tw|taiwan|日本|jp|japan|韩|kr|korea|美|us|states|新加坡|sg|singapore)).*"
   - name: 自动选择
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Auto.png
