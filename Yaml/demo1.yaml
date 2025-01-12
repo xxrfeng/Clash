@@ -13,6 +13,10 @@ proxy-providers:
   provider2:
     <<: *p
     url: "https://substore.wenddy.top/8vXtAxRGfddmhz2nx1pS/download/home?target=ClashMeta"
+  provider3:
+    <<: *p
+    url: "https://substore.wenddy.top/8vXtAxRGfddmhz2nx1pS/download/AKILE?target=ClashMeta"
+    
 ipv6: true
 allow-lan: true
 mixed-port: 7890
