@@ -70,7 +70,9 @@ proxy-groups:
 - {name: 美国自动选择,type: url-test, include-all: true, filter: "(?i)(?!直连)(美|us|unitedstates|united states)", icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/US.png"}
 - {name: 新加坡自动选择,type: url-test, include-all: true, filter: "(?i)(新|sg|singapore)", icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/SG.png"}
 
+- {name: 🌐 Home, type: select, include-all: true, tolerance: 20, interval: 300, filter: "test"}
 rules:
+- IP-CIDR,172.31.1.0/24,🌐 Home
 - GEOIP,lan,直连,no-resolve
 - RULE-SET,biliintl_domain,哔哩东南亚
 - RULE-SET,ehentai_domain,ehentai
