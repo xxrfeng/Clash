@@ -15,7 +15,7 @@ proxy-providers:
     url: "https://substore.wenddy.top/8vXtAxRGfddmhz2nx1pS/download/home?target=ClashMeta"
   provider3:
     <<: *p
-    url: "https://app.mitce.com/?sid=203701&token=srvzdwcp&app=clashmeta"
+    url: "https://substore.wenddy.top/8vXtAxRGfddmhz2nx1pS/download/AKILE"
     
 ipv6: true
 allow-lan: true
