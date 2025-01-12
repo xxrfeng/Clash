@@ -15,10 +15,12 @@ proxy-providers:
     url: "https://substore.wenddy.top/8vXtAxRGfddmhz2nx1pS/download/home?target=ClashMeta"
   provider3:
     <<: *p
-    url: "https://substore.wenddy.top/8vXtAxRGfddmhz2nx1pS/download/AKILE?target=Stash"
+    url: "https://substore.wenddy.top/8vXtAxRGfddmhz2nx1pS/download/AKILE?includeUnsupportedProxy=true"
+    
 # 用于下载订阅时指定UA
 global-ua: clash meta
-    
+
+mode: rule    
 ipv6: true
 allow-lan: true
 mixed-port: 7890
