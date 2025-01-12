@@ -7,15 +7,15 @@ p: &p {type: http, interval: 3600, health-check: {enable: true, url: "https://ww
 
 # url 里填写自己的订阅,名称不能重复
 proxy-providers:
-  # provider1:
-  #   <<: *p
-  #   url: "https://substore.wenddy.top/8vXtAxRGfddmhz2nx1pS/download/RN?target=ClashMeta"
+  provider1:
+    <<: *p
+    url: "https://substore.wenddy.top/8vXtAxRGfddmhz2nx1pS/download/RN?target=ClashMeta"
   provider2:
     <<: *p
     url: "https://substore.wenddy.top/8vXtAxRGfddmhz2nx1pS/download/home?target=ClashMeta"
-  provider3:
-    <<: *p
-    url: "https://substore.wenddy.top/8vXtAxRGfddmhz2nx1pS/download/AKILE?target=ClashMeta"
+  # provider3:
+  #   <<: *p
+  #   url: "https://substore.wenddy.top/8vXtAxRGfddmhz2nx1pS/download/AKILE?target=ClashMeta"
     
 ipv6: true
 allow-lan: true
