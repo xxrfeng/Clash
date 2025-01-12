@@ -8,7 +8,7 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
       interval: 300
     proxy: 🟢 直连
-    url: "https://substore.wenddy.top/8vXtAxRGfddmhz2nx1pS/download/AKILE?target=Stash"
+    url: "https://substore.wenddy.top/8vXtAxRGfddmhz2nx1pS/download/AKILE?target=ClashMeta"
   Airport_02:
     type: http
     interval: 1800
@@ -17,7 +17,17 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
       interval: 300
     proxy: 🟢 直连
-    url: "https://substore.wenddy.top/8vXtAxRGfddmhz2nx1pS/download/RN?target=Stash"      
+    url: "https://substore.wenddy.top/8vXtAxRGfddmhz2nx1pS/download/RN?target=ClashMeta"      
+  Airport_03:
+    type: http
+    interval: 1800
+    health-check:
+      enable: true
+      url: https://www.baidu.com
+      interval: 300
+    proxy: 🟢 直连
+    url: "https://substore.wenddy.top/8vXtAxRGfddmhz2nx1pS/download/home?target=ClashMeta"  
+    
 # 用于下载订阅时指定UA
 global-ua: clash meta
     
@@ -77,19 +87,19 @@ sniffer:
     - "+.push.apple.com"
     - "+.apple.com"
     
-# 代理模式
-# tun:
-#   enable: true
-#   stack: mixed
-#   mtu: 9000
-#   dns-hijack:
-#     - "any:53"
-#     - "tcp://any:53"
-#   auto-route: true
-#   auto-redirect: true
-#   auto-detect-interface: true
+#代理模式
+tun:
+  enable: true
+  stack: mixed
+  mtu: 9000
+  dns-hijack:
+    - "any:53"
+    - "tcp://any:53"
+  auto-route: true
+  auto-redirect: true
+  auto-detect-interface: true
   
-# DNS模块
+#DNS模块
 # dns:
 #   enable: true
 #   listen: 0.0.0.0:1053
@@ -137,6 +147,7 @@ proxies:
 pr: &pr {type: select, proxies: [🚀 节点选择, 🔯 香港故转, 🔯 日本故转, ♻️ 香港自动, ♻️ 日本自动, ♻️ 美国自动, ♻️ 自动选择, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇺🇲 美国节点, 🌐 全部节点]}
 # 策略组
 proxy-groups:
+  - {name: 🌐 Home, type: select, include-all: true, tolerance: 20, interval: 300, filter: "test"}
   - {name: 🚀 节点选择, type: select, proxies: [🔯 香港故转, 🔯 日本故转, ♻️ 香港自动, ♻️ 日本自动, ♻️ 美国自动, ♻️ 自动选择, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇺🇲 美国节点, 🌐 全部节点]}
   - {name: 📹 YouTube,!!merge <<: *pr}
   - {name: 🍀 Google,!!merge <<: *pr}
@@ -162,7 +173,9 @@ proxy-groups:
   - {name: ♻️ 美国自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(美|US|(?i)States|America))^((?!(港|台|日|韩|新)).)*$"}
   - {name: ♻️ 自动选择, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "^((?!(直连)).)*$"}
   - {name: 🌐 全部节点, type: select, include-all: true}
+
 rules:
+  - IP-CIDR,172.31.1.0/24,🌐 Home
   - RULE-SET,private_domain,🟢 直连
   - RULE-SET,apple_domain,🍎 Apple
   - RULE-SET,proxylite,🚀 节点选择
