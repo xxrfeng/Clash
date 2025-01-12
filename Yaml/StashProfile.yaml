@@ -144,7 +144,7 @@ proxies:
   # benchmark-url: http://www.baidu.com
  
 # 锚点
-pr: &pr {type: select, proxies: [🚀 节点选择, FR 法国自动, FR 法国节点, ♻️ 美国自动, ♻️ 自动选择, 🇺🇲 美国节点, 🌐 全部节点]}
+pr: &pr {type: select, proxies: [🚀 节点选择, FR 法国自动, FR 法国节点, ♻️ 美国自动, ♻️ 自动选择, 🇺🇲 美国节点]}
 # 策略组
 proxy-groups:
   - {name: 🌐 Home, type: select, include-all: true, tolerance: 20, interval: 300, filter: "test"}
