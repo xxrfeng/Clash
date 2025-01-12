@@ -16,6 +16,8 @@ proxy-providers:
   provider3:
     <<: *p
     url: "https://substore.wenddy.top/8vXtAxRGfddmhz2nx1pS/download/AKILE?target=Stash"
+# 用于下载订阅时指定UA
+global-ua: clash meta
     
 ipv6: true
 allow-lan: true
