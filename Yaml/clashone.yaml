@@ -18,6 +18,16 @@ proxy-providers:
       interval: 300
     proxy: 🟢 直连
     url: "https://substore.wenddy.top/8vXtAxRGfddmhz2nx1pS/download/RN?target=ClashMeta"      
+  Airport_03:
+    type: http
+    interval: 1800
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 300
+    proxy: 🟢 直连
+    url: "https://substore.wenddy.top/8vXtAxRGfddmhz2nx1pS/download/home?target=ClashMeta"  
+    
 # 用于下载订阅时指定UA
 global-ua: clash meta
     
@@ -162,7 +172,9 @@ proxy-groups:
   - {name: ♻️ 美国自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(美|US|(?i)States|America))^((?!(港|台|日|韩|新)).)*$"}
   - {name: ♻️ 自动选择, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "^((?!(直连)).)*$"}
   - {name: 🌐 全部节点, type: select, include-all: true}
+  - {name: 🌐 Home, type: select, include-all: false, tolerance: 20, interval: 300, filter: "test"}
 rules:
+  - RULE-SET,172.31.1.0/24,🌐 Home
   - RULE-SET,private_domain,🟢 直连
   - RULE-SET,apple_domain,🍎 Apple
   - RULE-SET,proxylite,🚀 节点选择
