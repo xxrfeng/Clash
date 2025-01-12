@@ -173,7 +173,6 @@ proxy-groups:
   - {name: ♻️ 美国自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(美|US|(?i)States|America))^((?!(港|台|日|韩|新)).)*$"}
   - {name: ♻️ 自动选择, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "^((?!(直连)).)*$"}
   - {name: 🌐 全部节点, type: select, include-all: true}
-  - {name: 🌐 Home, type: select, include-all: true, tolerance: 20, interval: 300, filter: "test"}
 rules:
   - IP-CIDR,172.31.1.0/24,🌐 Home
   - RULE-SET,private_domain,🟢 直连
